@@ -1,0 +1,97 @@
+:root{
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+  /* background: #9e74dd; */
+  background-image: url(/img/bghero.png);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+.hero p, h1,h3{
+  color: white;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: rgb(43, 20, 66) !important;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(100px);
+  text-shadow: var(--shadow);
+  opacity: 0.7;
+}
+.logo{
+  font-size: 35px;
+  color:rgb(207, 110, 207);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 40%;
+  opacity: 130%;
+}
+
+div .image{
+  margin-right: auto;
+  margin-left: 100px;
+}
+ 
+.navbar a{
+  font-size: 23px;
+  text-decoration: none;
+  color: #ededed;
+  font-weight: 500;
+  margin-left: 35px;
+  font-family:Arial, Helvetica, sans-serif ;
+  opacity: 130%;
+}
+
+.navbar a:hover{
+  color: rgb(207, 110, 207);
+  font-weight: bold;
+  font-size: 24px;
+  transition: all .3s ease-in-out;
+  opacity: 130%;
+}
+
+  .cal{
+    background-color: #ededed;
+    width: 60%;
+    margin-left: 250px;
+    margin-bottom: 150px;
+    margin-top: 30px;
+    width: 80%;
+    font-size: 30px;
+  }
+
+  .cal h2{
+    color: #3F2182;
+  }
+
+  .hero h1{
+    font-size: 58px;
+    font-weight: 700;
+    color: #3F2182;
+    font-family: Mate;
+    text-align: center;
+    margin-top: 80px;
+  }
+   
+  .hero hr{
+    width: 220px;
+    border: 3px solid;
+    margin: auto;
+    color: #3F2182;
+  }

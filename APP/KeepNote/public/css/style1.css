@@ -1,0 +1,234 @@
+:root{
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hero{
+  /* background: #9e74dd; */
+  background-image: url(/img/bghome.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.hero p, h1,h3{
+  color: white;
+}
+body{
+  height: 350vh;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: rgb(43, 20, 66) !important;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(100px);
+  text-shadow: var(--shadow);
+  opacity: 0.7;
+}
+.logo{
+  font-size: 35px;
+  color:rgb(207, 110, 207);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 40%;
+  opacity: 130%;
+}
+
+div .image{
+  margin-right: auto;
+  margin-left: 100px;
+}
+ 
+.navbar a{
+  font-size: 23px;
+  text-decoration: none;
+  color: #ededed;
+  font-weight: 500;
+  margin-left: 35px;
+  font-family:Arial, Helvetica, sans-serif ;
+  opacity: 130%;
+}
+
+.navbar a:hover{
+  color: rgb(207, 110, 207);
+  font-weight: bold;
+  font-size: 24px;
+  transition: all .3s ease-in-out;
+  opacity: 130%;
+}
+
+.Home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 12%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.home-content{
+  max-width: 600px;
+}
+.home-content h1{
+  font-size: 58px;
+  font-weight: 700;
+  color: #3F2182;
+  font-family: Mate;
+}
+.home-content h3{
+  font-size: 32px;
+  color: rgb(114, 31, 114);
+  font-weight: 700;
+  font-family:Nanum Myeongjo;
+}
+.home-content p{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 700px;
+  color: rgb(114, 31, 114);
+  padding: auto;
+}
+.home-content .btn-box{
+  width: 345px;
+  height: 50px;
+}
+.btn-box a{
+  display: inline-flex;
+  width: 150px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: plum;
+  border: 3px solid rgb(63, 34, 92);
+  border-radius: 8px;
+  font-size: 19px;
+  color: #3F2182;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 3px;
+  animation-delay: 0.3s;
+}
+.btn-box a:hover{
+  background: #3F2182;
+  color: plum;
+  width: 170px;
+  border: 3px solid rgb(186, 154, 216);
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#homes{
+  height: 100vh;
+  background-image: url(/img/bghero.png);
+  background-size: cover;
+  background-position: center;
+  display: block; 
+  margin: 0 auto;
+
+} #About {
+  height: 100vh;
+  background-image: url(/img/bghero\ -\ Copy.png);
+  background-size: cover;
+  background-position: center;
+  display: block; 
+  margin: 0 auto;
+}
+#homes #fitur{
+  padding-top: 5%;
+  align-items: center;
+  justify-content: center;
+}
+#homes #fitur #ft1,
+#homes #fitur #ft2{
+  height: 450px;
+}
+#Jhome h1{
+  font-weight: bolder;
+  font-family: Nanum Myeongjo;
+  color: #3F2182;
+  font-size: 64px;
+}
+#Jhome p{
+  font-family: Nanum Myeongjo;
+  color: #6d569c;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  width: 80%;
+  margin-left: 10%;
+}
+#homes #fitur #ft1 h1,
+#homes #fitur #ft2 h1{
+  background-color: plum;
+  background-size: 50%;
+  color: #3F2182;
+}
+#homes #fitur #ft1 p,
+#homes #fitur #ft2 p{
+  font-size: 19px;
+}
+#homes #fitur #ft3{
+  height: 200px;
+  text-align: left;
+}
+#homes #fitur #ft3 h1{
+  background-color: plum;
+  text-align: center;
+  color: #3F2182;
+}
+#homes #fitur #ft3{
+  height: 275px;
+}
+#homes #fitur #ft3 p{
+  font-size: 19px;
+}
+
+.btn-boxA a{
+  display: inline-flex;
+  width: 150px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background: plum;
+  border: 3px solid rgb(63, 34, 92);
+  border-radius: 8px;
+  font-size: 19px;
+  color: #3F2182;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 3px;
+  animation-delay: 0.3s;
+}
+.btn-boxA a:hover{
+  background: rgb(231, 133, 231);
+  width: 170px;
+  border: 3px solid rgb(186, 154, 216);
+}
+
+@media (max-width: 992px){
+  html{
+    font-size: 75%
+  }
+}
+@media (max-width: 768px){
+  html{
+    font-size: 65%
+  }
+}
+@media (max-width: 576px){
+  html{
+    font-size: 55%
+  }
+}

@@ -1,0 +1,284 @@
+:root{
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  body{
+    background-image: url(/img/bghero.png);
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+  }
+  .hero p, h1,h3{
+    color: white;
+  }
+  body{
+    height: 100vh;
+  }
+  
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(43, 20, 66) !important;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(100px);
+    text-shadow: var(--shadow);
+    opacity: 0.7;
+  }
+  .logo{
+    font-size: 35px;
+    color:rgb(207, 110, 207);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 40%;
+    opacity: 130%;
+  }
+  
+  div .image{
+    margin-right: auto;
+    margin-left: 100px;
+  }
+   
+  .navbar a{
+    font-size: 23px;
+    text-decoration: none;
+    color: #ededed;
+    font-weight: 500;
+    margin-left: 35px;
+    font-family:Arial, Helvetica, sans-serif ;
+    opacity: 130%;
+  }
+  
+  .navbar a:hover{
+    color: rgb(207, 110, 207);
+    font-weight: bold;
+    font-size: 24px;
+    transition: all .3s ease-in-out;
+    opacity: 130%;
+  }
+
+ .hero #container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 1000px;
+    height: 700px;
+    padding: 20px;
+    margin-top: 200px;
+    margin-left: 700px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+#list-header {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.blankDiv {
+    background-color: #fff;
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addNoteDiv {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addNoteDiv:hover {
+    transition: 0.25s;
+    background-color: #f1f1f1;
+}
+
+
+#addNoteDiv i {
+    font-size: 70px;
+    color: gainsboro;
+}
+
+
+/* List CSS */
+#list-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+li {
+    background-color: #fff385;
+    margin: 5px 0;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Added to align buttons to the right */
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow:  9px 9px 18px #b3b3b3,
+             -9px -9px 18px #ffffff;
+}
+
+li span {
+    font-size: 15px;
+    flex-grow: 1;
+    word-wrap: break-word;
+    overflow-y: scroll;
+}
+
+#editBtn,
+#deleteBtn {
+    background-color: #c6aaff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px; /* Adjusted margin for spacing */
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 60px;
+}
+
+#editBtn {
+    background-color: gainsboro;
+}
+
+#deleteBtn:hover {
+    background-color: #8c53ff;
+}
+
+#editBtn:hover {
+    background-color: gray;
+}
+
+
+/* Create Note Popup CSS */
+#popupContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid #8c53ff;
+}
+
+#btn-container {
+    display: flex;
+}
+
+#submitBtn, #closeBtn {
+    width: 100px;
+    background-color: #8c53ff;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#closeBtn {
+    background-color: gainsboro;
+}
+
+
+/* Editing Popup CSS */
+#editing-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#submitBtn, #closeBtn {
+    width: 100px;
+    background-color: #8c53ff;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#closeBtn {
+    background-color: gainsboro;
+}
