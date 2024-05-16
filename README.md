@@ -13,10 +13,11 @@ Sprint 1
 * Menyimpan Catatan
 * Menghapus Catatan
 * Melihat Tanggal
+  
 ## Keterangan Folder
->App :Folder Yang Berisi Kode Yang Akan Di Tampilkan
->Design :Folder Yang Berisi Design Yang Akan Di Implementasikan Ke App
->Dokumentasi :Folder Yang Berisi Cara Uji Coba web
+> * App :Folder Yang Berisi Kode Yang Akan Di Tampilkan
+> * Design :Folder Yang Berisi Design Yang Akan Di Implementasikan Ke App
+> * Dokumentasi :Folder Yang Berisi Cara Uji Coba web
 
 ### Requirements
 
