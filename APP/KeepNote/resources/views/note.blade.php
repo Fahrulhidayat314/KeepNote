@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/note.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,29 +22,28 @@
             </div>
 
             <nav class="navbar ">
-                <a href="" class="active" >Home</a>
-                <a href="">About</a>
-                <a href="note">Note</a> 
+                <a href="/" class="active">Dashboard</a>
+                <a href="calendar">Feature</a>
+                <a href="/">About</a>
+                <a href="note">Note</a>
                 <a href="calendar">Calendar</a>
             </nav> 
         </header>
-
-            <div id="container">
-
-                <div id="list-header">
-                    <div id="addNoteDiv" onclick="popup()">
-                        <i class="fa-solid fa-plus"></i>
-                    </div>
-                    <div class="blankDiv"></div>
-                    <div class="blankDiv"></div>
-                </div>
-
-                <div id="list-container">
-                    <ul id="notes-list"></ul>
-                </div>
-            </div>
-
-    </div>
-            <script src="js/scriptNote.js"></script>
 </body>
+<div class="footer">
+    <div class="container text-center" style="padding: 20px;">
+        <div class="row">
+            <div class="col-6 col-sm-6">
+                <h5>@Fahrul Hidayattulloh</h5>
+                <h5>@Istya Yulia Amnesti</h5>
+                <h5>@Vava Ahsanul Khuluk</h5>
+            </div>
+            <div class="col-6 col-sm-6">
+                <h5>233307011 | TI-2A</h5>
+                <h5>233307019 | TI-2A</h5>
+                <h5>233307029 | TI-2A</h5>
+            </div>
+        </div>
+    </div>
+</div>
 </html>

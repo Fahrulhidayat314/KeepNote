@@ -127,3 +127,12 @@
   width: 170px;
   border: 3px solid rgb(186, 154, 216);
   }
+
+  .footer{
+    background-color: plum;
+  }
+  
+  .footer h5{
+    color: #3F2182;
+    font-size: 1.5rem;
+  }
