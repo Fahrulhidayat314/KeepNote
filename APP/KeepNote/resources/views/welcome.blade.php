@@ -25,11 +25,11 @@
 
 
             <nav class="navbar ">
-                <a href="/" class="active">Dashboard</a>
-                <a href="calendar">Feature</a>
-                <a href="/">About</a>
-                <a href="note">Note</a>
-                <a href="calendar">Calendar</a>
+                <a href="/" class="active">Home</a>
+                <a href="#homes">Feature</a>
+                <a href="#About">About</a>
+                <a href="/notes">Note</a>
+                <a href="/calenders">Calendar</a>
             </nav>
         </header>
 
@@ -43,8 +43,8 @@
 
 
                 <div class="btn-box">
-                    <a href="register">Register</a>
-                    <a href="login">Login</a>
+                    <a href="#homes">Features</a>
+                    <a href="#About">About</a>
                 </div>
             </div>
             <div class="image">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div id="ft2" class="col-5 rounded-3 animate__animated animate__fadeInRight animate__slower" style="background: linear-gradient(to right, #26154b, #311d5c);">
                     <div class="p-3">
                         <h1 class="rounded-4">Calendar</h1><br>

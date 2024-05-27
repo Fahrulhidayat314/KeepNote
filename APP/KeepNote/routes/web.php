@@ -1,10 +1,13 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\Calender;
 use Illuminate\Support\Facades\Route;
+use App\Models\Note;
+
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/register');
 });
 
 Route::get('/dashboard', function () {
@@ -19,10 +22,18 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/note', function () {
-    return view('note');
+Route::get('/notes', function(){
+    return view('notes', ['judul' => 'Blog', 'notes' => Note::all()]);
 });
 
-Route::get('/calendar', function () {
-    return view('calendar');
+Route::get('/calenders', function(){
+    return view('calenders', ['status' => false, 'calenders' => Calender::all()]);
+});
+
+Route::get('note/{note:id}', function(Note $note){
+    return view('note', ['judul' => 'Single Post', 'note' => $note]);
+});
+
+Route::get('/welcome', function () {
+    return view('welcome', ['name' => '$name']);
 });

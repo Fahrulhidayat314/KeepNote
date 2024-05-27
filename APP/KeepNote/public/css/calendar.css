@@ -8,7 +8,6 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
-  /* background: #9e74dd; */
   background-image: url(/img/bghero.png);
   background-size: cover;
   background-position: center;
@@ -68,16 +67,26 @@ div .image{
 
   .cal{
     background-color: #ededed;
-    width: 60%;
-    margin-left: 450px;
-    margin-bottom: 150px;
-    margin-top: 30px;
-    width: 60%;
+    width: 45%;
+    margin-bottom: 50px;
     font-size: 30px;
+  }
+
+  .input{
+    background-color: #ededed;
+    width: 32%;
+    margin-bottom: 50px;
+    font-size: 30px;
+    height: 500px;
   }
 
   .cal h2{
     color: #3F2182;
+  }
+
+  .input h2{
+    color: #3F2182;
+    font-size: 2.5rem;
   }
 
   .hero h1{
@@ -90,10 +99,11 @@ div .image{
   }
    
   .hero hr{
-    width: 220px;
+    width: 1150px;
     border: 3px solid;
     margin: auto;
     color: #3F2182;
+    opacity: 200%;
   }
 
   .footer{
@@ -103,4 +113,25 @@ div .image{
   .footer h5{
     color: #3F2182;
     font-size: 1.5rem;
+  }
+
+  .btn-boxA button{
+    display: inline-flex;
+    width: 130px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background: plum;
+    border: 3px solid rgb(63, 34, 92);
+    border-radius: 8px;
+    font-size: 19px;
+    color: #3F2182;
+    text-decoration: none;
+    font-weight: 600;
+    animation-delay: 0.3s;
+  }
+  .btn-boxA button:hover{
+    background: #3F2182;
+    border: 3px solid #fff;
+    color: #ededed;
   }

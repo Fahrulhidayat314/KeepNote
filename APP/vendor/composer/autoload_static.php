@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit65fdaf02cf2a4dc9241e927f36d36b8e
+class ComposerStaticInitb3e4a427f5c94e0f9a18aba5efe988a4
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -15,6 +15,7 @@ class ComposerStaticInit65fdaf02cf2a4dc9241e927f36d36b8e
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
@@ -64,8 +65,8 @@ class ComposerStaticInit65fdaf02cf2a4dc9241e927f36d36b8e
         ),
         'L' => 
         array (
-            'Laravel\\Ui\\' => 11,
             'Laravel\\Prompts\\' => 16,
+            'Laravel\\Breeze\\' => 15,
         ),
         'I' => 
         array (
@@ -74,7 +75,6 @@ class ComposerStaticInit65fdaf02cf2a4dc9241e927f36d36b8e
             'Illuminate\\Translation\\' => 23,
             'Illuminate\\Support\\' => 19,
             'Illuminate\\Pipeline\\' => 20,
-            'Illuminate\\Foundation\\Auth\\' => 27,
             'Illuminate\\Filesystem\\' => 22,
             'Illuminate\\Events\\' => 18,
             'Illuminate\\Contracts\\' => 21,
@@ -195,13 +195,13 @@ class ComposerStaticInit65fdaf02cf2a4dc9241e927f36d36b8e
         array (
             0 => __DIR__ . '/..' . '/psr/clock/src',
         ),
-        'Laravel\\Ui\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/laravel/ui/src',
-        ),
         'Laravel\\Prompts\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/prompts/src',
+        ),
+        'Laravel\\Breeze\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/breeze/src',
         ),
         'Illuminate\\View\\' => 
         array (
@@ -225,10 +225,6 @@ class ComposerStaticInit65fdaf02cf2a4dc9241e927f36d36b8e
         'Illuminate\\Pipeline\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/pipeline',
-        ),
-        'Illuminate\\Foundation\\Auth\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/laravel/ui/auth-backend',
         ),
         'Illuminate\\Filesystem\\' => 
         array (
@@ -304,9 +300,9 @@ class ComposerStaticInit65fdaf02cf2a4dc9241e927f36d36b8e
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit65fdaf02cf2a4dc9241e927f36d36b8e::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit65fdaf02cf2a4dc9241e927f36d36b8e::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit65fdaf02cf2a4dc9241e927f36d36b8e::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb3e4a427f5c94e0f9a18aba5efe988a4::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb3e4a427f5c94e0f9a18aba5efe988a4::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitb3e4a427f5c94e0f9a18aba5efe988a4::$classMap;
 
         }, null, ClassLoader::class);
     }
