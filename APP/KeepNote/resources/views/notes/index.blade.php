@@ -65,8 +65,8 @@
             </div>
             @endforeach
         </div>
-        <div class=" py-5 content-center ">
-            {{$notes->links()}}
+        <div class="d-flex justify-content-center my-5">
+            {{ $notes->links() }}
         </div>
     </div>
 </body>

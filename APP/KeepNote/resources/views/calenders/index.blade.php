@@ -58,48 +58,52 @@
                     <div class="btn-boxA py-3">
                         <a href="{{ route('calenders.create') }}">Tambah Rencana</a>
                     </div>
-                    @foreach($calenders as $calender)
-                    <div class="card col-4 mb-4">
-                        <h5 class="card-header">{{$calender->aktivitas}}</h5>
-                        <div class="card-body">
-                            <h5 class="card-title">Dimulai: {{$calender->tanggal_mulai}} | Berakhir: {{$calender->tanggal_akhir}}</h5>
-                            @if($calender->status == 0)
-                            <div class=" bg-danger my-3">
-                                <p class="card-text text-light">Aktivitas {{$calender->aktivitas}} BELUM SELESAI</p>
-                            </div>
-                            <div style="display: flex; gap: 4px; justify-content: center; align-items: center;">
-                                <form action="{{ route('calenders.destroy', $calender->id) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus aktivitas ini?');" style="display:inline;">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button class="btn btn-danger">Hapus</button>
-                                </form>
-                                <form action="{{ route('calenders.activate', $calender->id) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menyelesaikan aktivitas ini?');" style="display:inline;">
-                                    @csrf @csrf
-                                    @method('PATCH')
-                                    <button class="btn btn-success">Selesai</button>
-                                </form>
-                            </div>
-                            @else
-                            <div class=" bg-success my-3">
-                                <p class="card-text text-light">Aktivitas {{$calender->aktivitas}} SUDAH SELESAI</p>
-                            </div>
-                            <div style="display: flex; gap: 4px; justify-content: center; align-items: center;">
-                                <form action="{{ route('calenders.destroy', $calender->id) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus aktivitas ini?');" style="display:inline;">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button class="btn btn-danger">Hapus</button>
-                                </form>
-                            </div>
-                            @endif
-                        </div>
-                    </div>
-                    @endforeach
                 </div>
-                <div class="my-5">
-                    {{$calenders->links()}}
+        </center>
+        <div class="row">
+            @foreach($calenders as $calender)
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <h5 class="card-header text-center font-bold text-lg">{{ $calender->aktivitas }}</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Dimulai: {{ $calender->tanggal_mulai }} | Berakhir: {{ $calender->tanggal_akhir }}</h5>
+                        @if($calender->status == 0)
+                        <div class="bg-danger my-3 p-2 rounded">
+                            <p class="card-text text-light">Aktivitas {{ $calender->aktivitas }} BELUM SELESAI</p>
+                        </div>
+                        <div class="d-flex justify-content-center gap-2">
+                            <form action="{{ route('calenders.destroy', $calender->id) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus aktivitas ini?');">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-danger">Hapus</button>
+                            </form>
+                            <form action="{{ route('calenders.activate', $calender->id) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menyelesaikan aktivitas ini?');">
+                                @csrf
+                                @method('PATCH')
+                                <button class="btn btn-success">Selesai</button>
+                            </form>
+                        </div>
+                        @else
+                        <div class="bg-success my-3 p-2 rounded">
+                            <p class="card-text text-light">Aktivitas {{ $calender->aktivitas }} SUDAH SELESAI</p>
+                        </div>
+                        <div class="d-flex justify-content-center gap-2">
+                            <form action="{{ route('calenders.destroy', $calender->id) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus aktivitas ini?');">
+                                @csrf
+                                @method('DELETE')
+                                <button class="btn btn-danger">Hapus</button>
+                            </form>
+                        </div>
+                        @endif
+                    </div>
                 </div>
             </div>
-        </center>
+            @endforeach
+        </div>
+
+        <div class="d-flex justify-content-center my-5">
+            {{ $calenders->links() }}
+        </div>
     </div>
 
     <script>

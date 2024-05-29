@@ -12,7 +12,7 @@ class CalenderController extends Controller
 {
     public function index()
     {
-        $calenders = Calender::latest()->paginate(5);
+        $calenders = Calender::latest()->paginate(6);
         return view('calenders.index', compact('calenders'));
     }
 

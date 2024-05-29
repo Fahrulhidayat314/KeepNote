@@ -46,7 +46,7 @@ class NoteController extends Controller
     public function update(Request $request, string $id): RedirectResponse{
         $request->validate([
             'judul' => 'required|max:255|min:10',
-            'konten' => 'required|min:100'
+            'konten' => 'required|min:20'
         ]);
 
         $notes = Note::findOrFail($id);

@@ -77,8 +77,8 @@
     opacity: 200%;
   }
 
-  .form-floating textarea{
-    font-size: 1.2rem;
+  .form textarea{
+    font-size: 1.3rem;
     border: #3F2182 2px solid;
   }
 
