@@ -1,26 +1,34 @@
-:root{
+:root {
     --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
-  }
-  *{
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  body{
+}
+
+body {
     background-image: url(/img/bghero.png);
-    /* background: linear-gradient(135deg, #a5678e, #a9739a, #ad7fa4, #b08aaf, #b496ba, #b8a1c5, #bbadcf, #bfb8da); */
     background-size: cover;
     background-position: center;
-  }
+    height: 110vh;
+}
 
-  .header{
+.hero p,
+h1,
+h3 {
+    color: white;
+}
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: rgb(55, 20, 66) !important;
+    background: rgb(43, 20, 66) !important;
     backdrop-filter: blur(5px);
     display: flex;
     justify-content: space-between;
@@ -29,63 +37,53 @@
     backdrop-filter: blur(100px);
     text-shadow: var(--shadow);
     opacity: 0.7;
-  }
-  .logo{
+}
+
+.logo {
     font-size: 35px;
-    color:rgb(207, 110, 207);
+    color: rgb(207, 110, 207);
     text-decoration: none;
     font-weight: 600;
     margin-top: 40%;
     opacity: 130%;
-  }
-  
-  div .image{
-    margin-right: auto;
-    margin-left: 100px;
-  }
-   
-  .navbar a{
+}
+
+.navbar a {
     font-size: 23px;
     text-decoration: none;
     color: #ededed;
     font-weight: 500;
     margin-left: 35px;
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
     opacity: 130%;
-  }
-  
-  .navbar a:hover{
+}
+
+.navbar a:hover {
     color: rgb(207, 110, 207);
     font-weight: bold;
     font-size: 24px;
     transition: all .3s ease-in-out;
     opacity: 130%;
-  }
+}
 
-  .container h1{
+.container h1 {
     font-size: 58px;
     font-weight: 700;
     color: #3F2182;
     font-family: Mate;
     margin-top: 100px;
-    /* background-color: red; */
-  }
+}
 
-  .container hr{
+.container hr {
     background-color: #3F2182;
     margin-bottom: 40px;
     opacity: 200%;
-  }
+}
 
-  .form-floating textarea{
-    font-size: 1.2rem;
-    border: #3F2182 2px solid;
-  }
-
-  .btn-boxA button,
-  div .button a{
+.btn-boxA button,
+div .buttons .button {
     display: inline-flex;
-    width: 130px;
+    width: 150px;
     height: 50px;
     justify-content: center;
     align-items: center;
@@ -97,10 +95,11 @@
     text-decoration: none;
     font-weight: 600;
     animation-delay: 0.3s;
-  }
-  .btn-boxA button:hover,
-  div .button a:hover{
+}
+
+.btn-boxA button:hover,
+div .buttons .button:hover {
     background: #3F2182;
     border: 3px solid #fff;
     color: #ededed;
-  }
+}

@@ -115,7 +115,8 @@ div .image{
     font-size: 1.5rem;
   }
 
-  .btn-boxA button{
+  .btn-boxA button,
+  .btn-boxA a{
     display: inline-flex;
     width: 130px;
     height: 50px;
@@ -130,7 +131,8 @@ div .image{
     font-weight: 600;
     animation-delay: 0.3s;
   }
-  .btn-boxA button:hover{
+  .btn-boxA button:hover,
+  .btn-boxA a:hover{
     background: #3F2182;
     border: 3px solid #fff;
     color: #ededed;

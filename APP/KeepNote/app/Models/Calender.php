@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Calender extends Model
 {
     use HasFactory;
-    protected $fillable = ['aktivitas', 'tanggal_mulai', 'tanggal_akhir'];
+    protected $fillable = ['aktivitas', 'tanggal_mulai', 'tanggal_akhir', 'status'];
 }
