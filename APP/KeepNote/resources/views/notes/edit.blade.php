@@ -46,7 +46,7 @@
                 @csrf
                 @method('PUT')
                 <div class="col-md-6 mb-4">
-                    <label for="judul" class="form-label">Judul</label>
+                    <label for="judul" class="form-label text-xl font-bold">Judul</label>
                     <input type="text" name="judul" class="form-control fs-4" id="judul" @error('judul') is-invalid @enderror value="{{old('judul', $notes->judul)}}" style=" border: #3F2182 2px solid; font-weight: bold;" required>
                     @error('judul')
                     <div class="alert alert-danger mt-2">
@@ -56,8 +56,8 @@
                 </div>
 
                 <div class="col-md-12 mb-4">
-                    <label for="konten bold">Konten</label>
-                    <textarea class="form-control" name="konten" id="konten" @error('konten') is-invalid @enderror style="height: 500px; border: #3F2182 2px solid;">{{old('konten', $notes->konten)}}</textarea>
+                    <label for="konten" class="text-xl font-bold">Konten</label>
+                    <textarea class="form-control" name="konten" id="konten" @error('konten') is-invalid @enderror style="height: 200px; border: #3F2182 2px solid;">{{old('konten', $notes->konten)}}</textarea>
                     @error('konten')
                     <div class="alert alert-danger mt-2">
                         {{ $message }}
