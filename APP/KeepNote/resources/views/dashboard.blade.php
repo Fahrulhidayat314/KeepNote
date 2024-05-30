@@ -30,6 +30,14 @@
                 <a href="{{ url('/dashboard#About') }}">About</a>
                 <a href="{{ route('notes.index')}}">Note</a>
                 <a href="{{ route('calenders.index')}}">Calendar</a>
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+
+                    <x-dropdown-link :href="route('logout')" onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                        {{ __('Log Out') }}
+                    </x-dropdown-link>
+                </form>
             </nav>
         </header>
 
@@ -73,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div id="ft2" class="col-5 rounded-3 animate__animated animate__fadeInRight animate__slower" style="background: linear-gradient(to right, #26154b, #311d5c);">
                     <div class="p-3">
                         <h1 class="rounded-4">Calendar</h1><br>
@@ -175,4 +183,5 @@
         </div>
     </div>
 </div>
+
 </html>

@@ -16,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/vecteezy_3d-logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    </style>
     <title>Noteus</title>
 </head>
 
@@ -32,6 +31,14 @@
                 <a href="{{ url('/dashboard#About') }}">About</a>
                 <a href="{{ route('notes.index')}}">Note</a>
                 <a href="{{ route('calenders.index')}}">Calendar</a>
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+
+                    <x-dropdown-link :href="route('logout')" onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                        {{ __('Log Out') }}
+                    </x-dropdown-link>
+                </form>
             </nav>
         </header>
         <?php

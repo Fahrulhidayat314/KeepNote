@@ -30,6 +30,14 @@
                 <a href="{{ url('/dashboard#About') }}">About</a>
                 <a href="{{ route('notes.index')}}">Note</a>
                 <a href="{{ route('calenders.index')}}">Calendar</a>
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+
+                    <x-dropdown-link :href="route('logout')" onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                        {{ __('Log Out') }}
+                    </x-dropdown-link>
+                </form>
             </nav>
         </header>
     </div>
@@ -57,7 +65,7 @@
                 <article class="py-3 px-8 border-b border-gray-300 bg-slate-50">
                     <h2 class="mb-1 text-3xl tracking-tight font-bold text-gray-900">{{$note ['judul']}}</h2>
                     <h4 class="text-gray-500 text-base">Created at {{$note->created_at->format('l, j F Y')}} | Updated at {{$note->updated_at->diffForHumans()}}</h4>
-                    <p class="text-lg text-gray-900 ">{{Str::limit($note ['konten'], 300)}}</p>
+                    <p class="text-lg text-gray-900 text-wrap">{{Str::limit($note ['konten'], 300)}}</p>
                     <div class="button py-3">
                         <a class="text-blue-400" href="/note/{{$note['id']}}">Read More&raquo;</a>
                     </div>
