@@ -113,7 +113,7 @@
     </div>
 
     <div id="About">
-        <div id="judul" class="container text-center text-white">
+        <div id="judul" class="container text-center text-white mx-4">
             <div id="subjudul" class="rounded-3">
                 <h1>Introduce</h1>
                 <h1>The KeepNote's Team</h1>
