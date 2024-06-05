@@ -145,7 +145,7 @@ html, body {
 }
 
 #homes{
-  height: 100vh;
+ height: 100%;
   background-image: url(/img/bghero.png);
   background-size: cover;
   background-position: center;
@@ -153,12 +153,13 @@ html, body {
   margin: 0 auto;
 
 } #About {
-  height: 100vh;
+  height: auto;
   background-image: url(/img/bghero.png);
   background-size: cover;
   background-position: center;
   display: block; 
-  margin: auto;
+  margin: 0 auto;
+  padding: 100px;
 }
 #homes #fitur,
 #judul #subjudul{
@@ -276,20 +277,4 @@ html, body {
 .footer h5{
   color: #3F2182;
   font-size: 1.5rem;
-}
-
-@media (max-width: 992px){
-  html{
-    font-size: 75%
-  }
-}
-@media (max-width: 768px){
-  html{
-    font-size: 65%
-  }
-}
-@media (max-width: 576px){
-  html{
-    font-size: 55%
-  }
 }

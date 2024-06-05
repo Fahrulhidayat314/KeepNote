@@ -35,11 +35,7 @@
             <div class="home-content  animate__animated animate__fadeInLeft animate__slower">
                 <h1>Hi, Welcome To <u>KeepNote </u></h1>
                 <h3>Make Your Note Easier</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi omnis ipsam ipsum fuga quisquam vel fugit cumque provident eveniet sint nobis rem eaque repellendus facere ipsa, voluptas dolor numquam!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maiores ullam facere reiciendis. Delectus eum animi distinctio impedit cupiditate, iste optio suscipit minima molestias temporibus in magni praesentium maxime corrupti?
-                </p>
-
-
+                <p>Keep Note adalah sebuah aplikasi digital yang dirancang untuk membantu pengguna mencatat, mengedit, menyimpan, menghapus catatan dengan efisien. Dengan fitur-fitur antarmuka yang intuitif, aplikasi ini menjadi alat yang sangat berguna bagi pelajar, profesional, dan siapa saja yang perlu mencatat ide, tugas, atau informasi penting lainnya. Seiring perkembangan teknologi, catatan-catatan yang dulunya terbatas pada kertas kini dapat disimpan dalam format digital. Hal ini memungkinkan akses yang lebih mudah dan fleksibilitas dalam pengelolaan informasi.</p>
                 <div class="btn-box">
                     <a href="{{ route('register') }}">Register</a>
                     <a href="{{ route('login') }}">Login</a>
@@ -56,8 +52,8 @@
         <div id="fitur" class="container text-center text-white">
             <div id="Jhome" class="rounded-3 animate__animated animate__fadeInDown animate__slower">
                 <h1>Write and Planing</h1>
-                <h1>What You Want To Do</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae enim neque atque, quos modi maxime obcaecati ea nemo voluptatem voluptatibus vero magnam quas nisi fugiat, cumque quae, odit deleniti accusantium.</p>
+                <h1>What you want to do</h1>
+                <p>Perlu mengingat untuk mengatur kegiatan? perlu mengatur to do list? perlu menyelesaikan tugas yang harus dilakukan? Atur pengingat berbasis waktu untuk memastikan Anda tidak pernah melewatkan apa pun.</p>
             </div>
             <div class="row g-3" style="margin-left: 13%; width: 1200px;">
                 <div id="ft1" class="col-5 rounded-3 animate__animated animate__fadeInLeft animate__slower" style="background: linear-gradient(to right, #26154b, #311d5c); margin-right: 5px;">
@@ -89,7 +85,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-10 col-sm-10">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laborum corporis culpa, aliquid labore magnam reprehenderit exercitationem praesentium numquam dolor, optio accusamus, cum fugit alias a non id natus ab.</p>
+                                    <p>Pada menu ini, kita bisa membuat catatan, mengedit catatan, menghapus catatan. Buat catatan sebagai penginggat apa saja yang harus dilakukan, disini!</p>
                                 </div>
                                 <div class="col-2 col-sm-2">
                                     <img src="/img/vecteezy_3d-logo.png" width="90%" alt="" style="margin-top: 20px;">
@@ -120,23 +116,23 @@
                         <h5>Fahrul Hidayattulloh</h5>
                         <h5>233307011</h5>
                         <div class="text-center">
-                            <img src="..." class="rounded-5" alt="...">
+                            <img src="img/233307011.JPG" class="rounded-5" alt="..." height="200px">
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, deserunt quidem provident fugiat doloremque aspernatur. Debitis, iure repudiandae commodi ad praesentium nihil, veniam accusamus porro rerum consectetur ratione! Consequatur.</p>
+                        <p class="m-2">bertugas untuk membuat program web, merancang, mengembakan situs web yang telah telah dibuat designer</p>
                         <div class="sosmed">
-                            <a href="">Instagram</a>
+                            <a href="https://www.instagram.com/fahrulhidayattulloh/">Instagram</a>
                         </div>
                     </div>
                     <div class="col-4">
                         <h2 class="rounded-4">Designer</h2>
-                        <h5>Istya Yulia Amnesti</h5>
+                        <h5>Istya Yulia Amnsti</h5>
                         <h5>233307019</h5>
                         <div class="text-center">
-                            <img src="..." class="rounded-5" alt="...">
+                        <img src="img/233307019.JPG" class="rounded-5" alt="..." height="200px">
                         </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla fuga placeat totam sint. Blanditiis sed sint beatae! Omnis, nesciunt adipisci. Sed mollitia rerum officiis recusandae iusto harum tempora culpa impedit.</p>
+                        <p class="m-2"> bertugas untuk membuat desain awal tampilan web, membuat database yang dibantu oleh uji coba dan dokumentasi</p>
                         <div class="sosmed">
-                            <a href="">Instagram</a>
+                            <a href="https://www.instagram.com/_iiistya/">Instagram</a>
                         </div>
                     </div>
                     <div class="col-4">
@@ -144,34 +140,16 @@
                         <h5>Vava Ahsanul Khuluk</h5>
                         <h5>233307029</h5>
                         <div class="text-center">
-                            <img src="..." class="rounded-5" alt="...">
+                            <img src="img/233307029.JPG" class="rounded-5" alt="..." height="200px">
                         </div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus aperiam deserunt eius in quas a sed beatae at fugit voluptate natus, ex dicta voluptatum. Repudiandae eveniet nulla assumenda rem placeat culpa impedit.</p>
+                        <p class="m-2"> bertugas sebagai pendemo web yang telah dibuat dan menguji coba apakah web tersebut bisa digunakan dengan baik atau tidak.</p>
                         <div class="sosmed">
-                            <a href="">Instagram</a>
+                            <a href="https://www.instagram.com/Antony00/">Instagram</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
-<div class="footer">
-    <div class="container text-center" style="padding: 20px;">
-        <div class="row">
-            <div class="col-6 col-sm-6">
-                <h5>@Fahrul Hidayattulloh</h5>
-                <h5>@Istya Yulia Amnesti</h5>
-                <h5>@Vava Ahsanul Khuluk</h5>
-            </div>
-            <div class="col-6 col-sm-6">
-                <h5>233307011 | TI-2A</h5>
-                <h5>233307019 | TI-2A</h5>
-                <h5>233307029 | TI-2A</h5>
-            </div>
-        </div>
-    </div>
-</div>
-
 </html>

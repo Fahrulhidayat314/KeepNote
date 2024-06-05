@@ -113,21 +113,4 @@
         });
     </script>
 </body>
-<div class="footer">
-    <div class="container text-center" style="padding: 20px;">
-        <div class="row">
-            <div class="col-6 col-sm-6">
-                <h5>@Fahrul Hidayattulloh</h5>
-                <h5>@Istya Yulia Amnesti</h5>
-                <h5>@Vava Ahsanul Khuluk</h5>
-            </div>
-            <div class="col-6 col-sm-6">
-                <h5>233307011 | TI-2A</h5>
-                <h5>233307019 | TI-2A</h5>
-                <h5>233307029 | TI-2A</h5>
-            </div>
-        </div>
-    </div>
-</div>
-
 </html>

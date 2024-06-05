@@ -25,7 +25,7 @@ class NoteController extends Controller
 
         $request->validate([
             'judul' => 'required|max:255|min:10',
-            'konten' => 'required|min:100'
+            'konten' => 'required|min:20'
         ]);
 
         Note::create([
