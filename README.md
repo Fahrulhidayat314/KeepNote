@@ -40,4 +40,4 @@ Sprint 1
 https://www.canva.com/design/DAF_7xoAHLM/RENPCePqg9lLlXZUQZ1DGA/edit?utm_content=DAF_7xoAHLM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 ## Presentasi Hasil
-
+https://www.canva.com/design/DAGHQApfzhs/iXr77pZMM1QBMSYZXQ_VWg/edit 
